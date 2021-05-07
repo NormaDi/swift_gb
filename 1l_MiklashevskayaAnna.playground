@@ -1,0 +1,42 @@
+import UIKit
+let a: Float = 1
+let b: Float = 2
+let c: Float = 3
+var x1: Float
+var x2: Float
+var d: Float
+var Diskr: Float 
+d = b * b - 4 * a * c
+if (d >= 0) {
+    Diskr = sqrt(d)
+    x1 = (-b + Diskr) / (2 * a)
+    x2 = (-b - Diskr) / (2 * a)
+    print(x1,x2)
+}else if (d < 0){
+    d = ((4 * a * c) - pow(b,2)) / (2*a)
+    print(d)
+}
+
+var k1: Double = 6
+var k2: Double = 8
+var k3: Double = 10
+var P: Double
+var S: Double
+P = k1 + k2 + k3
+S = (k1 + k2)/2
+k3 = sqrt (pow(k1,2) + pow(k2,2))
+print("Периметр треугольника равен \(P)");
+    print("Гипотенуза равна \(k3)");
+        print("Площадь треугольника равна \(S)");
+
+//3
+var AOfD = 45.0 
+var Years = 1
+let AnnualPercentage = 10.0 
+while Years <= 5 {
+    let OnePercent = AOfD / 100.0 
+    let AnnualIncome = OnePercent * AnnualPercentage
+    AOfD = AOfD + AnnualIncome
+    Years += 1
+}
+print("Сумма вклада через 5 лет равна \(AOfD)")
